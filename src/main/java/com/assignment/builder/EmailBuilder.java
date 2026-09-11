@@ -1,4 +1,8 @@
-package org.example;
+package com.assignment.builder;
 
-public class EmailBuilder {
+public interface EmailBuilder {
+    EmailBuilder setRecipient(String recipient);
+    EmailBuilder setSubject(String subject);
+    EmailBuilder setBody(String body);
+    EmailBuilder setAttachment(String attachmentPath);
 }
